@@ -67,6 +67,7 @@ class MegacamMapper(CameraMapper):
         afwImageUtils.defineFilter('u', lambdaEff=374, alias="u.MP9301")
         afwImageUtils.defineFilter('u2', lambdaEff=354, alias="u.MP9302")
         afwImageUtils.defineFilter('g', lambdaEff=487, alias="g.MP9401")
+        afwImageUtils.defineFilter('gri', lambdaEff=666, alias="gri.MP9605")
         afwImageUtils.defineFilter('g2', lambdaEff=472, alias="g.MP9402")
         afwImageUtils.defineFilter('r', lambdaEff=628, alias="r.MP9601")
         afwImageUtils.defineFilter('r2', lambdaEff=640, alias="r.MP9602")
@@ -77,7 +78,7 @@ class MegacamMapper(CameraMapper):
         afwImageUtils.defineFilter('z2', lambdaEff=926, alias="z.MP9901")
 
         # define filters?
-        self.filterIdMap = dict(u=0, g=1, r=2, i=3, z=4, i2=5, u2=6, g2=7, r2=8, i3=9, z2=10)
+        self.filterIdMap = dict(u=0, g=1, r=2, i=3, z=4, i2=5, u2=6, g2=7, r2=8, i3=9, z2=10, gri=11)
 
         # Ensure each dataset type of interest knows about the full range of
         # keys available from the registry

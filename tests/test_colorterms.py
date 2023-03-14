@@ -47,6 +47,15 @@ class ColortermOverrideTestCase(unittest.TestCase):
             self.assertIsInstance(ct.c0, numbers.Number)
             self.assertIsInstance(ct.c1, numbers.Number)
             self.assertIsInstance(ct.c2, numbers.Number)
+        refBands = ["u", "g", "r", "i", "z", "r", "g"]
+        cfhtBands = ["u", "g", "r", "i", "z", "r2", "gri"]
+        for band in cfhtBands:
+            ct = self.photoCalConf.colorterms.getColorterm(band, photoCatName="ps1")  # exact match
+            self.assertIn(ct.primary, refBands)
+            self.assertIn(ct.secondary, refBands)
+            self.assertIsInstance(ct.c0, numbers.Number)
+            self.assertIsInstance(ct.c1, numbers.Number)
+            self.assertIsInstance(ct.c2, numbers.Number)
 
 
 def setup_module(module):

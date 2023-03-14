@@ -14,6 +14,8 @@ config.astrometryRefObjLoader.filterMap = {
     'u': 'g',
     'g': 'g',
     'r': 'r',
+    'r2': 'r',
+    'gri': 'g',
     'i': 'i',
     'i2': 'i',
     'z': 'z',

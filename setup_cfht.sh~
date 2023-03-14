@@ -1,0 +1,12 @@
+pwd=$(pwd)
+cd /arc/projects/classy/pipeline
+
+echo Setting obs_cfht -t fraserw
+setup obs_cfht -t fraserw
+
+GREEN="\[$(tput setaf 2)\]"
+RESET="\[$(tput  sgr0)\]"
+export PS1="(${GREEN}lsst-fraserw-cfht${RESET}) > "
+
+
+cd ${pwd}

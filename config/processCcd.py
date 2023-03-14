@@ -47,8 +47,15 @@ for refObjLoader in (config.calibrate.astromRefObjLoader,
                      config.calibrate.photoRefObjLoader,
                      config.charImage.refObjLoader,
                      ):
-    refObjLoader.filterMap = {'i2': 'i'}
-    refObjLoader.filterMap = {'r2': 'r'}
+    #refObjLoader.filterMap = {'i2': 'i'}
+    #refObjLoader.filterMap = {'r2': 'r'}
+    #refObjLoader.filterMap = {'gri': 'g'}
+    refObjLoader.filterMap = {'g': 'g', 'g2': 'g',
+                              'r': 'r', 'r2': 'r',
+                              'z': 'z', 'z2': 'z',
+                              'i': 'i', 'i2': 'i', 'i3': 'i',
+                              'gri': 'g',
+    }
     refObjLoader.ref_dataset_name = "ps1_pv3_3pi_20170110"
 
 config.calibrate.astrometry.wcsFitter.order = 3

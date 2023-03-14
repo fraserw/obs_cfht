@@ -2226,8 +2226,262 @@ config.detectorList[35].pitchDeg = 0.0
 # ID of detector slot
 config.detectorList[35].id = 35
 
+
+
+config.detectorList[36] = lsst.afw.cameraGeom.cameraConfig.DetectorConfig()
+# y0 of pixel bounding box                                                                                                
+config.detectorList[36].bbox_y0 = 0
+
+# y1 of pixel bounding box                                                                                                
+config.detectorList[36].bbox_y1 = 4611
+
+# x1 of pixel bounding box                                                                                                
+config.detectorList[36].bbox_x1 = 2047
+
+# x0 of pixel bounding box                                                                                                
+config.detectorList[36].bbox_x0 = 0
+
+# Name of detector slot                                                                                                   
+config.detectorList[36].name = 'ccd36'
+
+# Pixel size in the x dimension in mm                                                                                     
+config.detectorList[36].pixelSize_x = 0.0135
+
+# Name of native coordinate system                                                                                        
+config.detectorList[36].transformDict.nativeSys = None
+
+config.detectorList[36].transformDict.transforms = None
+# x position of the reference point in the detector in pixels in transposed coordinates.                                  
+config.detectorList[36].refpos_x = 1023.5
+
+# y position of the reference point in the detector in pixels in transposed coordinates.                                  
+config.detectorList[36].refpos_y = 2305.5
+
+# Pixel size in the y dimension in mm                                                                                     
+config.detectorList[36].pixelSize_y = 0.0135
+
+# Detector type: SCIENCE=0, FOCUS=1, GUIDER=2, WAVEFRONT=3                                                                
+config.detectorList[36].detectorType = 0
+
+# x offset from the origin of the camera in mm in the transposed system.                                                  
+config.detectorList[36].offset_x = -142.9785
+
+# y offset from the origin of the camera in mm in the transposed system.                                                  
+config.detectorList[36].offset_y = 31.51575
+
+# Transpose the pixel grid before orienting in focal plane?                                                               
+config.detectorList[36].transposeDetector = None
+
+# yaw (rotation about z) of the detector in degrees. This includes any                                                    
+# necessary rotation to go from detector coordinates to camera coordinates                                                
+# after optional transposition.                                                                                           
+config.detectorList[36].yawDeg = 180.0
+
+# roll (rotation about x) of the detector in degrees                                                                      
+config.detectorList[36].rollDeg = 0.0
+
+# Serial string associated with this specific detector                                                                    
+config.detectorList[36].serial = '917224'
+
+# pitch (rotation about y) of the detector in degrees                                                                     
+config.detectorList[36].pitchDeg = 0.0
+
+# ID of detector slot                                                                                                     
+config.detectorList[36].id = 36
+
+
+
+config.detectorList[37] = lsst.afw.cameraGeom.cameraConfig.DetectorConfig()
+# y0 of pixel bounding box                                                                                                
+config.detectorList[37].bbox_y0 = 0
+
+# y1 of pixel bounding box                                                                                                
+config.detectorList[37].bbox_y1 = 4611
+
+# x1 of pixel bounding box                                                                                                
+config.detectorList[37].bbox_x1 = 2047
+
+# x0 of pixel bounding box                                                                                                
+config.detectorList[37].bbox_x0 = 0
+
+# Name of detector slot                                                                                                   
+config.detectorList[37].name = 'ccd37'
+
+# Pixel size in the x dimension in mm                                                                                     
+config.detectorList[37].pixelSize_x = 0.0135
+
+# Name of native coordinate system                                                                                        
+config.detectorList[37].transformDict.nativeSys = None
+
+config.detectorList[37].transformDict.transforms = None
+# x position of the reference point in the detector in pixels in transposed coordinates.                                  
+config.detectorList[37].refpos_x = 1023.5
+
+# y position of the reference point in the detector in pixels in transposed coordinates.                                  
+config.detectorList[37].refpos_y = 2305.5
+
+# Pixel size in the y dimension in mm                                                                                     
+config.detectorList[37].pixelSize_y = 0.0135
+
+# Detector type: SCIENCE=0, FOCUS=1, GUIDER=2, WAVEFRONT=3                                                                
+config.detectorList[37].detectorType = 0
+
+# x offset from the origin of the camera in mm in the transposed system.                                                  
+config.detectorList[37].offset_x = 142.9785
+
+# y offset from the origin of the camera in mm in the transposed system.                                                  
+config.detectorList[37].offset_y = 31.51575
+
+# Transpose the pixel grid before orienting in focal plane?                                                               
+config.detectorList[37].transposeDetector = None
+
+# yaw (rotation about z) of the detector in degrees. This includes any                                                    
+# necessary rotation to go from detector coordinates to camera coordinates                                                
+# after optional transposition.                                                                                           
+config.detectorList[37].yawDeg = 180.0
+
+# roll (rotation about x) of the detector in degrees                                                                      
+config.detectorList[37].rollDeg = 0.0
+
+# Serial string associated with this specific detector                                                                    
+config.detectorList[37].serial = '835264'
+
+# pitch (rotation about y) of the detector in degrees                                                                     
+config.detectorList[37].pitchDeg = 0.0
+
+# ID of detector slot                                                                                                     
+config.detectorList[37].id = 37
+
+
+
+config.detectorList[38] = lsst.afw.cameraGeom.cameraConfig.DetectorConfig()
+# y0 of pixel bounding box                                                                                                
+config.detectorList[38].bbox_y0 = 0
+
+# y1 of pixel bounding box                                                                                                
+config.detectorList[38].bbox_y1 = 4611
+
+# x1 of pixel bounding box                                                                                                
+config.detectorList[38].bbox_x1 = 2047
+
+# x0 of pixel bounding box                                                                                                
+config.detectorList[38].bbox_x0 = 0
+
+# Name of detector slot                                                                                                   
+config.detectorList[38].name = 'ccd38'
+
+# Pixel size in the x dimension in mm                                                                                     
+config.detectorList[38].pixelSize_x = 0.0135
+
+# Name of native coordinate system                                                                                        
+config.detectorList[38].transformDict.nativeSys = None
+
+config.detectorList[38].transformDict.transforms = None
+# x position of the reference point in the detector in pixels in transposed coordinates.                                  
+config.detectorList[38].refpos_x = 1023.5
+
+# y position of the reference point in the detector in pixels in transposed coordinates.                                  
+config.detectorList[38].refpos_y = 2305.5
+
+# Pixel size in the y dimension in mm                                                                                     
+config.detectorList[38].pixelSize_y = 0.0135
+
+# Detector type: SCIENCE=0, FOCUS=1, GUIDER=2, WAVEFRONT=3                                                                
+config.detectorList[38].detectorType = 0
+
+# x offset from the origin of the camera in mm in the transposed system.                                                  
+config.detectorList[38].offset_x = -142.9785
+
+# y offset from the origin of the camera in mm in the transposed system.                                                  
+config.detectorList[38].offset_y = -31.47000
+
+# Transpose the pixel grid before orienting in focal plane?                                                               
+config.detectorList[38].transposeDetector = None
+
+# yaw (rotation about z) of the detector in degrees. This includes any                                                    
+# necessary rotation to go from detector coordinates to camera coordinates                                                
+# after optional transposition.                                                                                           
+config.detectorList[38].yawDeg = 0.0
+
+# roll (rotation about x) of the detector in degrees                                                                      
+config.detectorList[38].rollDeg = 0.0
+
+# Serial string associated with this specific detector                                                                    
+config.detectorList[38].serial = '835235'
+
+# pitch (rotation about y) of the detector in degrees                                                                     
+config.detectorList[38].pitchDeg = 0.0
+
+# ID of detector slot                                                                                                     
+config.detectorList[38].id = 38
+
+
+config.detectorList[39] = lsst.afw.cameraGeom.cameraConfig.DetectorConfig()
+# y0 of pixel bounding box                                                                                                
+config.detectorList[39].bbox_y0 = 0
+
+# y1 of pixel bounding box                                                                                                
+config.detectorList[39].bbox_y1 = 4611
+
+# x1 of pixel bounding box                                                                                                
+config.detectorList[39].bbox_x1 = 2047
+
+# x0 of pixel bounding box                                                                                                
+config.detectorList[39].bbox_x0 = 0
+
+# Name of detector slot                                                                                                   
+config.detectorList[39].name = 'ccd39'
+
+# Pixel size in the x dimension in mm                                                                                     
+config.detectorList[39].pixelSize_x = 0.0135
+
+# Name of native coordinate system                                                                                        
+config.detectorList[39].transformDict.nativeSys = None
+
+config.detectorList[39].transformDict.transforms = None
+# x position of the reference point in the detector in pixels in transposed coordinates.                                  
+config.detectorList[39].refpos_x = 1023.5
+
+# y position of the reference point in the detector in pixels in transposed coordinates.                                  
+config.detectorList[39].refpos_y = 2305.5
+
+# Pixel size in the y dimension in mm                                                                                     
+config.detectorList[39].pixelSize_y = 0.0135
+
+# Detector type: SCIENCE=0, FOCUS=1, GUIDER=2, WAVEFRONT=3                                                                
+config.detectorList[39].detectorType = 0
+
+# x offset from the origin of the camera in mm in the transposed system.                                                  
+config.detectorList[39].offset_x = 142.97
+
+# y offset from the origin of the camera in mm in the transposed system.                                                  
+config.detectorList[39].offset_y = -31.51575
+
+# Transpose the pixel grid before orienting in focal plane?                                                               
+config.detectorList[39].transposeDetector = None
+
+# yaw (rotation about z) of the detector in degrees. This includes any                                                    
+# necessary rotation to go from detector coordinates to camera coordinates                                                
+# after optional transposition.                                                                                           
+config.detectorList[39].yawDeg = 0.0
+
+# roll (rotation about x) of the detector in degrees                                                                      
+config.detectorList[39].rollDeg = 0.0
+
+# Serial string associated with this specific detector                                                                    
+config.detectorList[39].serial = '8261155'
+
+# pitch (rotation about y) of the detector in degrees                                                                     
+config.detectorList[39].pitchDeg = 0.0
+
+# ID of detector slot                                                                                                     
+config.detectorList[39].id = 39
+
+
+
 # Coefficients for radial distortion
 config.radialCoeffs = None
 
 # Name of this camera
 config.name = 'CFHT MegaCam'
+

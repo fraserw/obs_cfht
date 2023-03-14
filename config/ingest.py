@@ -14,7 +14,7 @@ config.parse.translators = {'taiObs': 'translate_taiObs',
                             'filter': 'translate_filter',
                             'defects': 'translate_defects',
                             }
-config.parse.extnames = ["ccd%02d" % ccd for ccd in range(36)]
+config.parse.extnames = ["ccd%02d" % ccd for ccd in range(40)]
 config.register.columns = {'runId': 'text',
                            'object': 'text',
                            'visit': 'int',

@@ -41,8 +41,6 @@ filters = {'u.MP9301': 'u',
            'gri.MP9605': 'gri',
            }
 
-chip_counter = -1
-
 
 class MegacamParseTask(ParseTask):
 
@@ -70,17 +68,9 @@ class MegacamParseTask(ParseTask):
                                                      int(hr), int(min), int(sec1), int(sec2))
 
     def translate_defects(self, md):
-        global chip_counter
-
-        if 'IMRED_MK' not in list(md.keys()):
-            if chip_counter == -1:
-                maskName = 'test.mask.0.40.01'
-                chip_counter = 0
-            else:
-                maskName = f'test.mask.0.40.01.fits[{self.getExtensionName(md)}]'
-            print(f'IMRED_MK not defined, using maskName={maskName}')
-        else:
-            maskName = md.getScalar("IMRED_MK").strip()
+        print(md.getScalar("CCD"))
+        exit()
+        maskName = md.getScalar("IMRED_MK").strip()
         maskName, ccd = maskName.split(".fits")
         filter = md.getScalar("FILTER").strip().split('.')[0]
         if filter in ["i", "i2", "i3", "z", "z2"]:
@@ -91,8 +81,6 @@ class MegacamParseTask(ParseTask):
     def getInfo(self, filename):
         phuInfo, infoList = super(MegacamParseTask, self).getInfo(filename)
         match = re.search(r"\d+(?P<state>o|p)\.fits.*", filename)
-        if match is None:
-            match = re.search(r"\d+(?P<state>s)\.fits.*", filename)
         if not match:
             raise RuntimeError("Unable to parse filename: %s" % filename)
         phuInfo['state'] = match.group('state')

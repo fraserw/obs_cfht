@@ -66,6 +66,8 @@ exposures:
     template: deepCoadd/%(filter)s/%(tract)d/%(patch)s/warp-%(filter)s-%(tract)d-%(patch)s-%(visit)d.fits
   deepCoadd_psfMatchedWarp:
     template: deepCoadd/%(filter)s/%(tract)d/%(patch)s/psfMatchedWarp-%(filter)s-%(tract)d-%(patch)s-%(visit)d.fits
+  deepDiff_differenceExp:
+    template: 'deepDiff/%(runId)s/%(object)s/%(date)s/%(filter)s/DIFFEXP-%(visit)07d-%(ccd)02d.fits'
 
 calibrations:
   bias:
